@@ -1,9 +1,13 @@
-import Link from 'next/link';
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div style={{ padding: '20px', textAlign: 'center' }}>
-      <h1>Welcome to the NUM App</h1>
+    <div>
+      <Navbar />
+      <main className="container mx-auto p-4">
+        <h1 className="text-3xl font-bold mb-4">Welcome to MyApp</h1>
+        <p>This is the landing page. You are logged in!</p>
+      </main>
     </div>
   );
 }
